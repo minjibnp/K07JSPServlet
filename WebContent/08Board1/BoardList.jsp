@@ -290,6 +290,4 @@ dao.close();
    <i class='fas fa-pencil-alt' style='font-size:20px'></i>
    <i class='fas fa-pencil-ruler' style='font-size:20px'></i>
    <i class='fa fa-cog' style='font-size:20px'></i>
-
-   아~~~~힘들다...ㅋ
  -->

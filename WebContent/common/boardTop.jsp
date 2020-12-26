@@ -62,7 +62,7 @@
 	%>	
 			<!-- 로그인이 된 상태(글쓰기를 위해 회원인증 한 후) -->
 			<li class="nav-item">
-				<a class="nav-link text-dark" href="#" onclick="alert('준비중')"><i
+				<a class="nav-link text-dark" href="#" onclick="location.href='ClientEdit.jsp'"><i
 				 class='fa fa-cogs' style='font-size:20px'></i>회원정보수정</a>
 			</li> 
 			<li class="nav-item">

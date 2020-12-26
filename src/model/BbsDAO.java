@@ -13,6 +13,8 @@ import javax.naming.InitialContext;
 import javax.servlet.ServletContext;
 import javax.sql.DataSource;
 
+import org.apache.jasper.tagplugins.jstl.core.Catch;
+
 public class BbsDAO {
 	/*
 	 PreparedStatement와 statement의 가장 큰 차이점은 캐시 사용여부.
@@ -445,5 +447,5 @@ public class BbsDAO {
 			
 			return bbs;
 	}
-
+	
 }

@@ -201,5 +201,35 @@ public class MemberDAO {
 	public static void main(String[] args) {
 		new MemberDAO();
 	}
+	
+	//비밀번호 변경 메소드-지훈ver 추가
+	public boolean changeClientPass(String newpass, String id, String pw) {
+		int affected = 0;
+		
+		String query = "UPDATE member SET "
+					+ " pass='"+newpass+"'"
+					+ " WHERE id=?";
+		
+		try {
+			psmt = con.prepareStatement(query);
+			psmt.setString(1, id);
+			
+			affected = psmt.executeUpdate();
+			
+			if(affected==1) {
+				//디버깅용
+				System.out.println("비밀번호 변경 성공!");
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+		
+		catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
 
 }
